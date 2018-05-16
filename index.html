@@ -4,17 +4,26 @@
 </head>
 <style>
   body {}
-  h1, h2{padding: 2px;}
-  p{font-size:12px; padding:2px; margin:5px 0px;}
-  .pStatus {font-size:14px}
-
+  h1, h4{margin:5px 0px 0px 0px;}
+  p{font-size:12px; margin:5px 0px 0px 0px;}
+  .medium {font-size:14px}
+  .small {font-size:12px}
+  input
 </style>
+  
+<script>
+</script>
+  
   <body>
-    <h1>Pods Inc.</h1><span><b>NOTE:</b> This is a test page...</span>
+    <h1>Pods Inc.<span class="small"><b>NOTE:</b> This is a test page...</span></h1>
     <hr></hr>
     <h4>Test Phase 1:</h4>
-    <span><input id="ON" type="button" value="Light On">C in</span>
-    <span><input id="OFF" type="button" value="Light Off">C out</span>
-    <p class="pStatus"><b>Status:</b><i id="status">None<i/></p>
+    <table>
+      <tr>
+        <td><input id="ON" type="button" value="Light On"></td>
+        <td><input id="OFF" type="button" value="Light Off"></td>
+      </tr>
+    </table>
+    <p class="medium"><b>Status:</b><i id="status">None<i/></p>
   </body>
 </html>
