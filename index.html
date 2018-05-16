@@ -19,6 +19,10 @@
   function itsOff(){
     document.getElementById("status").innerHTML = "Light is OFF now!!!"
   }
+  
+   function clear(){
+    document.getElementById("status").innerHTML = "None"
+  } 
 </script>
   
   <body>
@@ -29,8 +33,11 @@
       <tr>
         <td><input id="ON" type="button" onclick="itsOn()" value="Light On"></td>
         <td><input id="OFF" type="button" onclick="itsOff()" value="Light Off"></td>
+        <td><input id="cls" type="button" onclick="clear()" value="None"></td>
       </tr>
-      <tr><b>Status: </b><i id="status">None</i></tr>
+      <tr>
+        <td><b>Status: </b><i id="status">None</i></td>
+      </tr>
     </table>
   </body>
 </html>
